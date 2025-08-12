@@ -27,7 +27,7 @@ export const useCart = create<Store>()((set) => ({
         } else {
             cloneItems.push(item)
         }
-        return { ...state, items: [] }
+        return { ...state, items: cloneItems }
     }),
     removeItem: (productId) => set(state => ({
         ...state,

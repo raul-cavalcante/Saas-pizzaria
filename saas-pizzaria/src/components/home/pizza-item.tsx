@@ -16,7 +16,7 @@ export const PizzaItem = ({ data }: Props) => {
 
     const handleAddToCart = () => {
         cart.addItem({
-            productId: data.id.toString(),
+            productId: data.id,
             quantity: 1
         })
         cart.setOpen(true)

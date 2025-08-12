@@ -16,3 +16,9 @@ export function formatPrice(price: number | string | Prisma.Decimal) {
     maximumFractionDigits: 2,
   })
 }
+
+export const checkFieldError = (fieldName: string, errors: any) => {
+  if(errors === null) return false
+  if(!errors[fieldName]) return false
+  return errors[fieldName][0]
+}
