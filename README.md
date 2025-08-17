@@ -6,15 +6,27 @@ Sistema completo de e-commerce para pizzarias, desenvolvido com Next.js, Prisma 
 
 ### Catálogo de Pizzas e Carrinho
 Sistema intuitivo de seleção de pizzas com carrinho em tempo real.
+
+
 <img width="423" height="906" alt="Print saasPizzaria" src="https://github.com/user-attachments/assets/9093a3f6-08f9-4a4c-a976-f7ed6fe8783c" />
+
+
 
 ### Gerenciamento do Carrinho
 Controle total sobre seus pedidos, com ajuste de quantidade e cálculo automático de valores.
+
+
 <img width="426" height="904" alt="Print saasPizzaria-2" src="https://github.com/user-attachments/assets/056cbe6e-d228-4a95-85d5-02c856e1f922" />
+
+
 
 ### Checkout Seguro
 Integração com Stripe para pagamentos seguros e rápidos.
+
+
 <img width="423" height="906" alt="Print saasPizzaria-3" src="https://github.com/user-attachments/assets/53dc1a88-ce65-4b52-8ee5-66c26452afde" />
+
+
 
 ## 🚀 Tecnologias
 
