@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🍕 Pizzasfy - Sistema de Pedidos de Pizza
 
-## Getting Started
+Sistema completo de e-commerce para pizzarias, desenvolvido com Next.js, Prisma e Stripe.
 
-First, run the development server:
+## ✨ Demonstração
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### Catálogo de Pizzas e Carrinho
+Sistema intuitivo de seleção de pizzas com carrinho em tempo real.
+![Catálogo e Carrinho](./public/demo/catalogo.png)
+
+### Gerenciamento do Carrinho
+Controle total sobre seus pedidos, com ajuste de quantidade e cálculo automático de valores.
+![Gerenciamento do Carrinho](./public/demo/carrinho.png)
+
+### Checkout Seguro
+Integração com Stripe para pagamentos seguros e rápidos.
+![Checkout](./public/demo/checkout.png)
+
+## 🚀 Tecnologias
+
+- **Frontend:** Next.js 14 com App Router
+- **Estilização:** Tailwind CSS + Shadcn/ui
+- **Backend:** Node.js com Prisma ORM
+- **Banco de Dados:** PostgreSQL
+- **Pagamentos:** Stripe
+- **Deploy:** Vercel
+
+## 🌟 Features
+
+- [x] Cadastro e autenticação de usuários
+- [x] Catálogo de pizzas com imagens
+- [x] Carrinho de compras em tempo real
+- [x] Checkout seguro com Stripe
+- [x] Gestão de pedidos
+- [x] Sistema de status de pedidos
+- [x] Interface responsiva
+
+## 🛠️ Estrutura do Projeto
+
+```plaintext
+saas-pizzaria/
+├── src/
+│   ├── app/         # Rotas e páginas
+│   ├── components/  # Componentes React
+│   ├── lib/         # Configurações e utilidades
+│   └── services/    # Serviços e integrações
+├── prisma/
+│   └── schema.prisma # Schema do banco de dados
+└── public/          # Arquivos estáticos
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📦 Instalação
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone o repositório
+```bash
+git clone https://github.com/seu-usuario/pizzasfy.git
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Instale as dependências
+```bash
+cd pizzasfy
+npm install
+```
 
-## Learn More
+3. Configure as variáveis de ambiente
+```bash
+cp .env.example .env
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. Execute as migrações do Prisma
+```bash
+npx prisma migrate dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. Inicie o servidor de desenvolvimento
+```bash
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔐 Variáveis de Ambiente
 
-## Deploy on Vercel
+```env
+DATABASE_URL="postgresql://..."
+STRIPE_SECRET_KEY="..."
+NEXT_PUBLIC_STRIPE_PUBLIC_KEY="..."
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 Licença
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 👨‍💻 Autor
+
+Feito por Raul Cavalcante
